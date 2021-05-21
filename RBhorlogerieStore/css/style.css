@@ -1,0 +1,641 @@
+
+/* Général */
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: RetroSans;
+}
+
+body
+{
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+/* The Header v. mobile */
+header
+{
+    background-image: url(../images/brandingpics.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+}
+
+header .menu
+{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 70px;
+}
+
+header .nav
+{
+   display: none; 
+}
+
+header .navbar
+{
+    padding: 15px 70px 10px 30px;
+    height: 20%;
+    
+}
+
+/* header .menu
+{
+    display: flex;
+    align-items: flex-start;
+    /* padding-left: 20px;
+    padding-right: 80px;
+    padding-top: 20px; 
+} */
+
+header .menu_logo
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+header .search
+{
+    display: none;
+}
+
+/* Collection */
+.collection
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    width: 100%;
+}
+
+.collection div h2
+{
+    padding: 0 20px 5px;
+    border-bottom: 1px solid black;
+    font-family: RetroSans;
+    font-size: 30px;
+}
+
+.produit
+{
+    padding: 20px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+}
+
+.container
+{
+    padding: 25px;
+    margin: 10px;
+    background-color: rgba(73, 73, 73, 0.1);
+    max-width: 200px;    
+}
+
+.container .contenu 
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button
+{
+    padding: 10px 0 10px; /*to modify*/
+    border-radius: 18px;
+    background-color: rgba(73, 73, 73, 0.1);
+    margin: 0 0 20px;
+}
+
+.button a
+{
+    color: #000;
+    padding: 7px 15px;
+    font-weight: bold;
+}
+
+/* Transition */
+.transition
+{
+    display: flex;
+    justify-content: center;
+    height: 390px;
+    min-width: 100%;
+    background: rgba(137, 64, 32, 0.7);
+    clip-path: polygon(0 76%, 0 14%, 100% 30%, 100% 90%);
+}
+
+.transition .brand
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transition .brand .pics
+{
+    margin-right: 30px;
+    padding-left: 20px;
+}
+
+.transition .brand .paragraph
+{
+    line-height: normal;
+    text-align: left;
+    padding-top: 20px;
+
+}
+
+/* Article before the end */
+.article
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.article .art_pics
+{
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.article .art_pics img
+{
+    clip-path: circle(50.0% at 50% 50%);
+}
+
+.article .art_paragraph
+{
+    margin: 0px 25px 5px;
+}
+
+.article .button
+{
+    max-width: 70px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+.article .art_lay
+{
+    margin-bottom: 50px;
+}
+
+/* Footer */
+footer
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    width: 100%;
+    height: auto;
+}
+
+footer .social_media
+{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 15px;
+    border-bottom: 1px solid #fff;
+    max-width: 100%;
+}
+
+footer .social_media li
+{
+    margin: 0 20px;
+}
+
+footer .speaker
+{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 0;
+}
+
+footer .speaker h2
+{
+    font-size: 0.9em;
+    color: #fff;
+    letter-spacing: 2px;
+
+}
+
+.newsletter 
+{
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #fff;
+}
+
+.newsletter .mail
+{
+    padding: 10px;
+    border: 1px solid rgb(73, 73, 73); /* color to change (grey)*/
+    border-radius: 15px 0 0 15px;
+    margin-right: 2px;
+    background-color: #C4C4C4;
+    color: rgba(73, 73, 73, 0.4); /* color to change */
+}
+
+.newsletter .inscription
+{
+    padding: 10px;
+    border: 1px solid  rgb(73, 73, 73); /* color to change*/
+    border-radius: 0 15px 15px 0; 
+    text-transform: uppercase;
+    background-color: red;/* color to change */
+    color: #fff;
+    font-weight: bold;
+}
+
+footer .foot
+{
+    display: flex;
+    padding: 20px 0 30px 0;
+    justify-content: center;
+}
+
+footer .foot li 
+{
+    margin: 0 10px;
+    text-transform: uppercase;
+    color: #fff;
+}
+footer .foot li a
+{
+    color: #fff;
+}
+
+footer .foot .option li
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.7em;
+    text-transform: none;
+    margin: 5px 0 0;
+}
+
+.copyright
+{
+    position: relative;
+    width: 10%;
+    bottom: 15px;
+    left: 150px;
+}
+
+.copyright p
+{
+    color: #fff;
+    font-size: 0.8em;
+}
+
+/* version tablet */
+
+@media screen and (min-width:768px){
+
+    header
+    {
+        height: 420px;
+    }
+
+    header .search
+    {
+        display: none;
+    }
+
+    header .navbar
+    {
+        margin: 0 150px;
+    }
+
+    header .menu
+    {
+        display: flex;
+        align-items: flex-start;
+        padding-left: 20px;
+        padding-right: 200px;
+    }
+
+    header .menu_logo
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden; 
+    }
+
+    /* Transition */
+    .transition .brand
+    {
+        width: 70%;
+    }
+    .transition .brand .paragraph p
+    {
+        font-size: 1.5em;
+    }
+
+    .transition .brand .pics img
+    {
+        width: 170px;
+        height: 170px;
+    }
+
+    /* Article */
+    .article
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .article .art_pics img
+    {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .article .art_lay
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        width: 600px;
+        margin-bottom: 70px;
+    }
+
+    .article .art_lay:nth-child(2)
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .article .art_paragraph
+    {
+        margin-top: 30px;
+    }
+
+    .article .button
+    {
+        display: none;
+    }
+
+    /* footer */
+    footer
+    {
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        flex-direction: row;
+        height: 280px;
+        width: 100%;
+    }
+
+    footer .foot
+    {
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    footer .foot .first
+    {
+        padding: 0 20px;
+    }
+
+    footer .foot .first .largeur
+    {
+        width: 80px;
+    }
+
+    footer .borders
+    {
+        border-right: 1px solid white;
+        width: 100%;
+    }
+
+    footer .newsletter
+    {
+        border-bottom: none;
+        padding-top: 30px;
+    }
+
+    footer .speaker
+    {
+        padding-top: 40px;
+    }
+
+    .copyright
+    {
+        display: none;
+        position: relative;
+        bottom: 20px;
+        right: 10px;
+    }
+    
+    footer .foot_lay
+    {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    footer .foot_lay .foot .first
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px;
+        width: 60px;
+    }
+
+}
+
+@media screen and (min-width:1196px) {
+
+    /* header */
+    header
+    {
+        height: 600px;
+        background-size: cover;
+    }
+
+    header .menu
+    {
+        display: none;
+    }
+
+    header .nav
+    {
+        display: flex;
+        justify-content: space-around;
+        width: 400px;
+        position: relative;
+        top: 47px;
+        right: 50px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    header .navbar
+    {
+        justify-content: space-around;
+    }
+
+    header .search
+    {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    header .search ul
+    {
+        display: flex;
+        position: relative;
+        bottom: 47px;
+    }
+
+    header .search ul li
+    {
+        padding: 0 7px;
+    }
+
+    /* collection */
+    .container 
+    {
+        padding: 40px;
+        margin: 50px;
+    }
+
+    /* transition */
+    .transition 
+    {
+        height: 650px;
+    }
+
+    .transition .brand
+    {
+        width: 70%;
+    }
+    .transition .brand .paragraph
+    {
+        width: 600px;
+    }
+
+    .transition .brand .paragraph p
+    {
+        font-size: 1.7em;
+    }
+
+    .transition .brand .pics img
+    {
+        width: 190px;
+        height: 190px;
+    }
+    /* article */
+    .article .art_lay
+    {
+        width: 800px;
+    }
+    .article .art_lay:nth-child(2)
+    {
+        padding-left: 120px;
+    }
+
+    .article .art_lay:nth-child(1),
+    .article .art_lay:nth-child(3)
+    {
+        padding-right: 120px;
+    }
+
+    /* footer */
+    footer
+    {
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        flex-direction: row;
+        height: 350px;
+        width: 100%;
+    }
+
+    footer .foot
+    {
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.6em;
+        max-width: 100%;
+    } 
+
+    footer .foot_lay .foot .first
+    {
+        padding: 0 60px;
+    }
+
+    footer .foot .first .largeur
+    {
+        width: 200px;
+    }
+
+    footer .foot_lay
+    {
+        text-align: center;
+    }
+
+    footer .borders
+    {
+        width: 600px;
+    }
+
+    footer .borders .social_media
+    {
+        padding: 25px 0;
+    }
+
+    footer .speaker
+    {
+        font-size: 1.3em;
+        padding-top: 80px;
+    }
+
+    footer .mail
+    {
+        width: 200px;
+    }
+
+    footer .inscription
+    {
+        width: 100px;
+        text-align: center;
+    }
+}
